@@ -1,0 +1,54 @@
+﻿<Window x:Class="UD02_Ejercicio01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UD02_Ejercicio01"
+        mc:Ignorable="d"
+    Title="Juego número"
+    Height="450"
+    Width="800"
+    Icon="/number.ico">
+    <Grid>
+        <TextBox
+            x:Name="numeroUsuarioTextBox"
+            HorizontalAlignment="Left"
+            Margin="316,160,0,0"
+            Text=""
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="120" />
+        <TextBlock
+            HorizontalAlignment="Left"
+            Margin="154,161,0,0"
+            Text="¿Qué número he pensado?"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top" />
+        <Button
+            x:Name="comprobarBoton"
+            Content="Comprobar"
+            HorizontalAlignment="Left"
+            Margin="185,201,0,0"
+            VerticalAlignment="Top"
+            Height="22"
+            Width="98"
+            Click="ComprobarBoton_Click" />
+        <Button
+            x:Name="reiniciarBoton"
+            Content="Reiniciar"
+            HorizontalAlignment="Left"
+            Margin="316,201,0,0"
+            VerticalAlignment="Top"
+            Height="22"
+            Width="98"
+            Click="ReiniciarBoton_Click" />
+        <TextBlock
+            x:Name="mensajeTextBlock"
+            HorizontalAlignment="Left"
+            Margin="467,161,0,0"
+            Text=""
+            TextWrapping="Wrap"
+            VerticalAlignment="Top" />
+
+    </Grid>
+</Window>
